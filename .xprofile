@@ -1,0 +1,5 @@
+#i have added all of autostart in xmonad startuphooks
+#this shows cursor icon on startup 
+xsetroot -cursor_name left_ptr
+
+

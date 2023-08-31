@@ -1,0 +1,19 @@
+Config { overrideRedirect = True
+       , lowerOnStart     = True
+       , hideOnStart      = False
+       , persistent       = True
+       , font             = "Roboto Bold 11"
+       , additionalFonts  = [ "Font Awesome 6 Free Solid 11"
+                            , "Font Awesome 6 Brands 11"
+                            ]
+       , bgColor          = "#2E3440"
+       , fgColor          = "#D8DEE9"
+       , position         = TopSize L 100 30
+       , commands         = [ Run Date "%A %d %B   %I:%M " "date" 50
+                            , Run UnsafeXMonadLog
+                            , Run Com "/home/abhinav/.config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 20]
+        , sepChar  = "%"
+        , alignSep = "}{"
+        , template = "<fc=#bf616a>   </fc> %UnsafeXMonadLog% }<fc=#8fbcbb>%date%</fc>{%trayerpad%"
+        }
+
